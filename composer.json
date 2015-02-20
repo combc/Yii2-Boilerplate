@@ -1,16 +1,13 @@
 {
-    "name": "yiisoft/yii2-app-advanced",
-    "description": "Yii 2 Advanced Application Template",
-    "keywords": ["yii2", "framework", "advanced", "application template"],
-    "homepage": "http://www.yiiframework.com/",
+    "name": "combc/Yii2Boilerplate",
+    "description": "Structure for enterprise-grade websites for Yii2 framework.",
+    "keywords": ["yii2", "framework", "boilerplate", "vagrant"],
+    "homepage": "http://www.combc.com/",
     "type": "project",
-    "license": "BSD-3-Clause",
+    "license": "MIT",
     "support": {
-        "issues": "https://github.com/yiisoft/yii2/issues?state=open",
-        "forum": "http://www.yiiframework.com/forum/",
-        "wiki": "http://www.yiiframework.com/wiki/",
-        "irc": "irc://irc.freenode.net/yii",
-        "source": "https://github.com/yiisoft/yii2"
+        "issues": "https://github.com/combc/Yii2Boilerplate/issues?state=open",
+        "source": "combc/Yii2Boilerplate"
     },
     "minimum-stability": "dev",
     "require": {
