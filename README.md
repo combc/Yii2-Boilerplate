@@ -154,7 +154,7 @@ XDebug port 9000
 
 And of course:
 
-MIT: [LICENCE][licence]
+MIT: [LICENSE][license]
 
 ====
 
@@ -180,4 +180,4 @@ MIT: [LICENCE][licence]
 [phpcs]: https://github.com/squizlabs/PHP_CodeSniffer
 [phpdox]: http://phpdox.de/
 [phpcpd]: https://github.com/sebastianbergmann/phpcpd
-[licence]: ../master/LICENSE.md
+[license]: ../master/LICENSE.md
