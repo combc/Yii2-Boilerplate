@@ -7,7 +7,7 @@
     "license": "MIT",
     "support": {
         "issues": "https://github.com/combc/Yii2Boilerplate/issues?state=open",
-        "source": "combc/Yii2Boilerplate"
+        "source": "https://github.com/combc/Yii2Boilerplate"
     },
     "minimum-stability": "dev",
     "require": {
