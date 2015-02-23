@@ -13,6 +13,9 @@ if [ -z "$1" ]
     exit;
 fi
 
+apt-get update > /dev/null
+apt-get -y install curl
+
 res=$( curl -w %{http_code} https://api.github.com/user?access_token=$1 -s --output /dev/null)
 if [ "$res" != "200" ]; then    
     echo ""
