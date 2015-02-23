@@ -29,6 +29,11 @@ Structure for enterprise-grade websites for Yii2 framework.
         vagrant up
 
 7.  You're done. Open up the [http://yii2frontend.dev:8080/](http://yii2frontend.dev:8080/). It's your future frontend. Open up [http://yii2backend.dev:8080/](http://yii2backend.dev:8080/). It's your future backend. You can start working.
+8. Change the origin repo to the new repository in order to push your new project:
+
+        git remote remove origin  
+        git remote add origin <NEW-GIT-REMOTE>
+
     Don't forget to `vagrant halt` the virtual machine before turning off your workstation, virtualbox can fail to shut itself down in time before `kill -9` arrives.
 
 ## Yii 2 Advanced Application Template
@@ -149,7 +154,7 @@ XDebug port 9000
 
 And of course:
 
-MIT: [LICENCE][licence]
+MIT: [LICENSE][license]
 
 ====
 
@@ -175,4 +180,4 @@ MIT: [LICENCE][licence]
 [phpcs]: https://github.com/squizlabs/PHP_CodeSniffer
 [phpdox]: http://phpdox.de/
 [phpcpd]: https://github.com/sebastianbergmann/phpcpd
-[licence]: ../master/LICENSE.md
+[license]: ../master/LICENSE.md
