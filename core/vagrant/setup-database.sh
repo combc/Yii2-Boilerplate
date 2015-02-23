@@ -101,7 +101,7 @@ EOF
     cp  /vagrant/core/phppgadmin.conf /etc/apache2/conf-enabled/phppgadmin.conf
 
 
-    cp /vagrant/core/default-file/main-local-pqsql.php /vagrant/common/config/main-local.php 
+    cp /vagrant/core/default-file/main-local-pgsql.php /vagrant/common/config/main-local.php 
     cp /vagrant/core/default-file/config-test-pgsql.php /vagrant/tests/codeception/config/config.php
 
 
