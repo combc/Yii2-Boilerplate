@@ -2,7 +2,7 @@
     "name": "combc/yii2boilerplate",
     "description": "Structure for enterprise-grade websites for Yii2 framework.",
     "keywords": ["yii2", "framework", "boilerplate", "vagrant"],
-    "homepage": "http://www.combc.com/",
+    "homepage": "http://www.combc.eu/",
     "type": "project",
     "license": "MIT",
     "support": {
