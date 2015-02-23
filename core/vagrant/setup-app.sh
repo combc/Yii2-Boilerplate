@@ -19,7 +19,8 @@ echo "ServerName localhost" > /etc/apache2/conf-available/default.conf
 fi
 sudo a2enconf default
 
-#Mysql migration
+#Database migration
+chmod +x /vagrant/tests/codeception/bin/yii
 /vagrant/yii migrate --interactive=0
 /vagrant/tests/codeception/bin/yii migrate --interactive=0
 

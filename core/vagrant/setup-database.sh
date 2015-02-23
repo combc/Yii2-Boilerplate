@@ -46,7 +46,7 @@ then
     mysql -uroot --password="$mysql_root_password" -e "GRANT ALL PRIVILEGES ON $APP_DB_NAME_TESTS.* TO '$APP_DB_USER'@'%' IDENTIFIED BY '$APP_DB_PASS' WITH GRANT OPTION;";
 
     cp /vagrant/core/default-file/main-local-mysql.php /vagrant/common/config/main-local.php 
-    sed -i "s/'dsn' => 'pgsql.*/'dsn' => 'mysql:host=localhost;dbname=$APP_DB_NAME_TESTS',/g" /vagrant/tests/codeception/config/config.php 
+    cp /vagrant/core/default-file/config-test-mysql.php /vagrant/tests/codeception/config/config.php
 
     echo "Successfully created MySQL dev virtual machine."
     echo "http://localhost:8080/phpmyadmin/"
@@ -102,7 +102,7 @@ EOF
 
 
     cp /vagrant/core/default-file/main-local-pqsql.php /vagrant/common/config/main-local.php 
-    sed -i "s/'dsn' => 'mysql.*/'dsn' => 'pgsql:host=localhost;dbname=$APP_DB_NAME_TESTS',/g" /vagrant/tests/codeception/config/config.php 
+    cp /vagrant/core/default-file/config-test-pgsql.php /vagrant/tests/codeception/config/config.php
 
 
     echo "Successfully created PostgreSQL dev virtual machine."

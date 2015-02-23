@@ -12,7 +12,10 @@ su vagrant -l -c "composer config -g github-oauth.github.com $1"
 su vagrant -l -c 'composer global require "fxp/composer-asset-plugin:1.0.*@dev"'
 su vagrant -l -c 'composer global require "codeception/codeception=2.0.*" "codeception/specify=*" "codeception/verify=*"'
 
+git clone https://github.com/combc/yii2-app-advanced.git  && mv yii2-app-advanced/* /vagrant
+
 su vagrant -l -c "cd /vagrant/ && composer install --no-interaction"
+su vagrant -l -c "/vagrant/init --env=Development"
 su vagrant -l -c "composer global require 'sebastian/phpdcd=*'"
 su vagrant -l -c "composer global require 'phpmd/phpmd=@stable'"
 su vagrant -l -c "composer global require 'squizlabs/php_codesniffer=*'"

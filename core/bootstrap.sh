@@ -31,23 +31,14 @@ then
     exit
 fi
 
-##copy ignore file
-cp /vagrant/core/default-file/params-local.php /vagrant/common/config/params-local.php 
-cp /vagrant/core/default-file/params-local.php /vagrant/console/config/params-local.php 
-cp /vagrant/core/default-file/params-local.php /vagrant/frontend/config/params-local.php
-cp /vagrant/core/default-file/params-local.php /vagrant/backend/config/params-local.php
+/vagrant/core/vagrant/prepare-trusty64.sh
+/vagrant/core/vagrant/setup-composer.sh $1
 
+##copy ignore file
 cp /vagrant/core/default-file/main-local-test.php /vagrant/console/config/main-local.php
 cp /vagrant/core/default-file/main-local.php /vagrant/backend/config/main-local.php
 cp /vagrant/core/default-file/main-local.php /vagrant/frontend/config/main-local.php
 
-cp /vagrant/core/default-file/index-test.php /vagrant/frontend/web/index-test.php
-cp /vagrant/core/default-file/index-test.php /vagrant/backend/web/index-test.php
-cp /vagrant/core/default-file/index.php /vagrant/frontend/web/index.php
-cp /vagrant/core/default-file/index.php /vagrant/backend/web/index.php
-
-/vagrant/core/vagrant/prepare-trusty64.sh
 /vagrant/core/vagrant/setup-database.sh $2
-/vagrant/core/vagrant/setup-composer.sh $1
 /vagrant/core/vagrant/setup-app.sh
 /vagrant/core/vagrant/setup-mailcatcher.sh
