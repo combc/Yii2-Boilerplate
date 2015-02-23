@@ -39,9 +39,6 @@ cp /vagrant/core/default-file/main-local-test.php /vagrant/console/config/main-l
 cp /vagrant/core/default-file/main-local.php /vagrant/backend/config/main-local.php
 cp /vagrant/core/default-file/main-local.php /vagrant/frontend/config/main-local.php
 
-chmod +x /vagrant/tests/codeception
-
-
 /vagrant/core/vagrant/setup-database.sh $2
 /vagrant/core/vagrant/setup-app.sh
 /vagrant/core/vagrant/setup-mailcatcher.sh
