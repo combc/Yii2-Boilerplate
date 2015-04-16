@@ -10,7 +10,7 @@ Structure for enterprise-grade websites for Yii2 framework.
 
 4.  Now just clone the Yii2Boilerplate repo:
 
-        git clone git@github.com/combc/Yii2Boilerplate.git <yourprojectname>
+        git clone git@github.com/combc/Yii2-Boilerplate.git <yourprojectname>
 
 5.  Create your own github personal API tokens [https://github.com/blog/1509-personal-api-tokens](https://github.com/blog/1509-personal-api-tokens). Paste it into a Vagrantfile.
 
