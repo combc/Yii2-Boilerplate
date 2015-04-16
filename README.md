@@ -1,4 +1,4 @@
-# Yii2Boilerplate
+# Yii2 Boilerplate
 Structure for enterprise-grade websites for Yii2 framework.
 
 ## Easiest initial deploy ever
